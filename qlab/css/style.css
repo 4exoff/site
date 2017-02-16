@@ -9,7 +9,7 @@
 	height: auto;
 }
 
-html, body{height:100%;}
+html{height:100%;}
 
 header{
 	width: 100%;
@@ -21,6 +21,10 @@ footer{
 	height: 1000px;
 }
 
+a{
+	
+	cursor: pointer;
+}
 .headerImage{
     background-image:url('../img/HeaderImage.png');
     background-position: center center;         
@@ -312,9 +316,347 @@ footer{
 		background-color:rgba(93, 200, 152,1);
 	}
 
-.services{
+#services{
 	width: 100%;
-	height: 500px;
-	background-color: blue;
+	min-height: 600px;
+	background-color: #333;
+	padding:30px 0px 100px 0px;
+}
+
+.servicesHeader{
+	width: 100%;
+	border:2px solid white;
+	height: auto;
+	margin-bottom: 30px;
+}
+.servicesHeaderContent{
+	width: 300px;
+	margin: 0 auto;
+	padding: 0px 79px;
+}
+.servicesHeaderTitle{
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:27px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.servicesHeaderLogo{
+	display: inline-block;
+	vertical-align: middle;
+}
+	.servicesHeaderLogo img{
+		width: 25px;
+		margin: 10px 5px;
+	}
+
+
+.firstOptionBlock{
+	width: 100%;
+	height: 140px;
+	position: relative;
+	padding: 10px 0px 20px 90px;
+}
+	.firstOptionBlock .OptionBlockContent{
+		transform: skew(-40deg);	
+		background-color: red;
+		margin-left: 50px;
+	}
+	.firstOptionBlock .OptionBlockBorder{
+		background-color: red;
+		margin: -10px auto auto 10px;
+			
+	}
+
+.secondOptionBlock{
+	width: 100%;
+	height: 150px;
+	position: relative;
+	margin-top: -10px;
+	padding: 10px 90px 20px 0px;	
+}
+	.secondOptionBlock .OptionBlockContent{
+		transform: skew(40deg);
+		background-color: green;
+		margin-left: 50px;
+	}
+	.secondOptionBlock .OptionBlockBorder{		
+		background-color: red;
+		margin:-10px auto auto 510px;
+	}
+	.secondOptionBlock .circle{
+		font-size: 25px;
+		line-height: 0.7;
+		margin-left:10px; 
+		vertical-align: middle;
+		float:right;
+	}
+
+.thirdOptionBlock{
+	width: 100%;
+	height: 130px;
+	position: relative;
+	margin-top: -20px;	
+	padding: 10px 0px 20px 90px;
+}
+	.thirdOptionBlock .OptionBlockContent{
+		transform: skew(-40deg);	
+		background-color: red;
+		margin-left: 50px;
+	}
+	.thirdOptionBlock .OptionBlockBorder{
+		background-color: red;
+		margin: -10px auto auto 10px;
+			
+	}
+
+.fourthOptionBlock{
+	width: 100%;
+	height: 130px;
+	position: relative;
+	margin-top: 0px;	
+	padding: 10px 90px 20px 0px;
+}
+	.fourthOptionBlock .OptionBlockContent{
+		transform: skew(40deg);
+		background-color: green;
+		margin-left: 50px;
+	}
+	.fourthOptionBlock .OptionBlockBorder{		
+		background-color: red;
+		margin:-10px auto auto 510px;
+	}
+
+	.fourthOptionBlock .circle{
+		font-size: 25px;
+		line-height: 0.7;
+		margin-left:10px; 
+		vertical-align: middle;
+		float:right;
+	}
+
+.OptionBlockContent{
+	width: 560px;
+	height: 100px;
+}
+.OptionBlockBorder{
+	width: 140px;
+	height: 140px;
+	border-radius: 70px;
+	text-align: center;
+	padding: 30px;
+	position: absolute;
+	border:6px solid white;
+	box-shadow: 0px 0px 15px 2px black inset;
+	z-index: 100;
+}
+
+.OptionBlockContentList{
+	position: absolute;
+	z-index: 100;
+	float: left;
+	width: 450px;
+}
+	.OptionBlockContentList li{
+		list-style-type: none;
+		font-size:10px;
+    	color: white;
+    	font-weight:700;
+    	font-family:Arial, Helvetica, sans-serif;
+    	text-transform:uppercase;  
+    	line-height: 2;
+	}
+
+.stepsWork{
+	width:100%;
+	min-height: 330px;
+	padding:40px 0px;
+	margin-top:-5px;
+	background-color: #333;
+}	
+
+
+
+.decorationStepsHeader,.decorationStepsFooter{
+	width: 100%;
+	min-height: 45px;
 
 }
+.decorationStepsHeader1,.decorationStepsFooter3{
+	display: inline-block;
+	width: 55%;
+	height: 45px;
+	background-color: green;
+}
+.titleStepsWork{
+	position: absolute;
+}
+
+.decorationStepsHeader2{
+	display: inline-block;
+	width: 21%;
+	background-color: yellow;
+	transform: skew(-30deg);
+	position: absolute;
+	height: 45px;
+	left: 50%;
+}
+.decorationStepsFooter2{
+	display: inline-block;
+	width: 21%;
+	background-color: yellow;
+	transform: skew(-30deg);
+	position: absolute;
+	height: 45px;
+	right: 50%;
+}
+.decorationStepsHeader3,.decorationStepsFooter1 {
+	display: inline-block;
+	width: 45%;
+	height: 45px;
+	background-color: blue;	
+}
+.navStepsWork{
+	width: 100%;
+	
+}
+.navStepsWork ul{
+	display: inline-block;
+	list-style-type: none;
+	text-align: center;
+}
+	.navStepsWork li{
+        display:inline-block;
+        margin:2px;
+    }
+    .navStepsWork a{
+    	background-color:#333;
+    	display:block;
+    	text-decoration:none;
+    	font-size:13px;
+    	color:orange;
+    	font-weight:500;
+        font-family:Arial, Helvetica, sans-serif;
+ 		padding: 15px 31px;
+    	border:1px solid orange;
+	}
+    .navStepsWork a:hover {
+    	background-color:orange;
+    	color: white;
+	}
+
+.slider-stepsWork{
+	width: 100%;
+	padding-top:40px;
+}
+
+.slider-stepsWork .navSliderStepsWorkLeft{
+	float: left;
+	position: absolute;
+	z-index: 900;
+	margin:50px 735px 50px 5px;
+}
+
+.slider-stepsWork .navSliderStepsWorkRight{
+	color: white;
+	position: absolute;
+	z-index: 900;
+	margin:50px 5px 50px 735px;
+}
+
+.web-development{
+	width: 710px;
+	margin:0px 20px 40px 20px;	
+	position: absolute;
+	z-index: 110;
+
+}
+
+.webSliderLogo{
+	display: inline-block;
+	width: 20%;
+	height: 160px;
+	text-align: center;
+
+	vertical-align: middle;
+
+}
+	.webLogo img{
+		padding:10px;
+		height: 90px;
+		
+	}
+
+.seo-promotion{
+	width: 710px;
+	margin:0px 20px 40px 20px;	
+	position: absolute;
+	opacity: 0;
+}
+
+.seoSliderLogo{
+	display: inline-block;
+	width: 16.6%;
+	height: 160px;
+	text-align: center;
+	
+	vertical-align: middle;
+}
+	.seoLogo img{
+		padding: 10px;
+		height: 90px;
+		
+	}
+
+.contextual-advertising{
+	width: 710px;
+	margin:0px 20px 40px 20px;	
+	position: absolute;
+	opacity: 0;
+}
+
+.contextualSliderLogo{
+	display: inline-block;
+	width: 25%;
+	height: 160px;
+	text-align: center;
+	
+	vertical-align: middle;
+}
+	.contextlogo img{
+		padding: 10px;
+		width: 150px;
+		height: 100px;
+		
+	}
+
+.c-configuring{
+	width: 710px;
+	margin:0px 20px 40px 20px;	
+	position: absolute;
+	opacity: 0;
+}
+
+.cSliderLogo{
+	display: inline-block;
+	width: 25%;
+	height: 160px;
+	text-align: center;
+	
+	vertical-align: middle;
+}
+	.clogo img{
+		padding: 10px;	
+		height: 100px;
+		
+	}
+
+
+#web0{
+	opacity: 0;
+	width: 0px;
+	height: 0px;
+}	
