@@ -3,6 +3,98 @@
     margin:0;
 	box-sizing: border-box;
 }
+
+.modal{
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, .7);
+	position: fixed;
+	z-index: 9000;
+	visibility:hidden;
+}
+.modalWindows{
+	margin:10% auto; 
+	width: 550px;
+	height:320px;
+	background-color: rgba(240,240, 240, 1); 
+}
+
+.headerModalWindowClose{
+	width: 100%;
+	height: 20px;
+}
+
+.headerModalWindowClose img{
+	float: right;
+	width: 20px;
+	padding: 3px;
+}
+
+.headerModalWindowClose img:hover{
+	opacity: .6;
+}
+
+.contentModalWindowTitle{
+	width: 510px;
+	height: 65px;
+	border:2px solid black;
+	margin:0px auto;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	padding: 25px 0px 20px 20px;
+}
+
+.contentModalWindowText{
+	width: 510px;
+	min-height: 40px;
+	text-align: center;
+}
+
+.contentModalWindowInput{
+	width: 260px;
+	margin: 0 auto;
+	
+}
+.modalInputText{
+	display: block;
+	margin: 3px;
+	background-color: rgba(0, 0, 0, .15);
+	border:none;
+	width: 254px;
+	height: 35px;
+	font-weight: 700;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	padding: 10px;
+}
+
+.footerModalWindowButton{
+	width: 260px;
+	margin: 0 auto;
+	padding:20px 3px;
+}
+
+	.footerModalWindowButton a{
+		float:right;
+		background-color:orange;
+	
+   		padding: 10px 30px; 	
+    	font-size:13px;
+    	font-weight:700;
+    	color: white;
+		font-family:Arial, Helvetica, sans-serif;
+   	 	text-transform:uppercase;
+   	 	text-align: center;
+	}
+	.footerModalWindowButton a:hover{
+		background-color:red;
+		color: black;
+	}
+
+
+
 .wrapper{
 	min-width: 320px;
 	margin: 0 auto;
@@ -21,10 +113,11 @@ footer{
 	height: 1000px;
 }
 
-a{
-	
+a{	
 	cursor: pointer;
+	text-decoration: none;
 }
+
 .headerImage{
     background-image:url('../img/HeaderImage.png');
     background-position: center center;         
@@ -118,11 +211,10 @@ a{
 	height: auto;
 }
 	.headerOrderButton a{
-		margin: 10px 0px 20px 20px;
+		margin: 10px 0px 10px 20px;
 		background-color: rgb(185, 33, 65);
 		display: inline-block;
-   		padding: 15px 90px; 
-    	text-decoration: none; 	
+   		padding: 15px 90px; 	
     	font-size:16px;
     	font-weight:900;
     	color: black;
@@ -130,6 +222,24 @@ a{
    	 	text-transform:uppercase;
    	 	text-align: center;
 	}
+	.headerOrderButton a:hover{
+		background-color: rgb(150, 33, 65);
+		color: white;
+	}
+
+.headerDownButton{
+	text-align: center;
+}
+	.headerDownButton img{
+		width: 60px;
+		margin-top: 50px;
+		opacity: .8;
+	}
+	.headerDownButton img:hover{
+		opacity: 1;
+	}
+	
+
 .headerMenu{
 	width: 100%;
 	height: 140px;
@@ -626,7 +736,7 @@ a{
 	
 	vertical-align: middle;
 }
-	.contextlogo img{
+	.contextLogo img{
 		padding: 10px;
 		width: 150px;
 		height: 100px;
@@ -648,14 +758,12 @@ a{
 	
 	vertical-align: middle;
 }
-	.clogo img{
+	.cLogo img{
 		padding: 10px;	
 		height: 100px;
 		
 	}
-
-
-#web0{
+#web0,#seo0,#context0,#config0{
 	opacity: 0;
 	width: 0px;
 	height: 0px;

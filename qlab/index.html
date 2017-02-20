@@ -23,6 +23,35 @@
     </script>
 </head>
 <body>
+
+
+
+	<div class="modal">
+		<div class="modalWindows">
+			<div class="headerModalWindow">
+				<div class="headerModalWindowClose">
+					<a class="ClodeModalWindows"><img src="img/closemodal.png"/></a>
+				</div>
+			</div>
+			<div class="contentModalWindow">
+				<div class="contentModalWindowTitle">обратный звонок</div>
+				<div class="contentModalWindowText">текстекстексттекстекст ексттекстексттекстекс тексттекстекст</div>
+				<div class="contentModalWindowInput">
+					<input type="text" value="Ваше Имя" class="modalInputText" id="Name"/>
+					<input type="text" value="Ваш телефон" class="modalInputText" id="Phone"/>
+					<input type="text" value="Ваш email" class="modalInputText" id="Email"/>
+				</div>
+			</div>
+			<div class="footerModalWindow">
+				<div class="footerModalWindowButton">
+					<a class="OrderFinish">Заказать</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+		
+
+
 	<div class="wrapper">
 		<header>
 			<div class="headerImage">
@@ -44,7 +73,10 @@
 						<img src="img/200rub.png"/>
 					</div>
 					<div class="headerOrderButton">
-						<a href="#">заказать</a>
+						<a class="OrderModalWindows">заказать</a>
+					</div>
+					<div class="headerDownButton">
+						<a href='.headerMenu'><img src="img/down1.png"/></a>
 					</div>
 				</div>
 			</div>
@@ -56,7 +88,7 @@
 						</div><div class="headerMenuList">
 							<ul>
 								<li>
-									<a href="#services">услуги</a>
+									<a href='#services'>услуги</a>
 								</li><li>
 									<a href="#">акции</a>
 								</li><li>
@@ -77,7 +109,7 @@
 							</div>
 							<div class="number"> +375 33 357 24 24</div>
 						</div><div class="contactsOrderButton">
-							<a>заказать звонок</a>
+							<a class="OrderModalWindows">заказать звонок</a>
 						</div>
 					</div>
 				</div>
@@ -181,14 +213,13 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>	
 		<div class="decorationStepsHeader">
 			<div class="decorationStepsHeader1">
 				<div class="titleStepsWork">этапы работы</div>
 			</div><div class="decorationStepsHeader2"></div><div class="decorationStepsHeader3"></div>
-		</div>
-		<div class="stepsWork">
-			
+		</div>		
+		<div class="stepsWork">	
 			<div class="content">
 				<div class="navStepsWork">
 					<ul>
@@ -228,64 +259,85 @@
 						</div>
 					</div>
 					<div class="seo-promotion">
-						<div class="seoSliderLogo">
+						<div class="seoSliderLogo" id="seo0">
 							<div class="seoLogo"><img src="img/seologo1.png" /></div>
 							<div class="seoLogoTitle">Расширенный список ключевых фраз</div>
-						</div><div class="seoSliderLogo">
+						</div><div class="seoSliderLogo" id="seo1">
+							<div class="seoLogo"><img src="img/seologo1.png" /></div>
+							<div class="seoLogoTitle">Расширенный список ключевых фраз</div>
+						</div><div class="seoSliderLogo" id="seo2">
 							<div class="seoLogo"><img src="img/seologo2.png" /></div>
 							<div class="seoLogoTitle">Аудит сайта</div>
-						</div><div class="seoSliderLogo">
+						</div><div class="seoSliderLogo" id="seo3">
 							<div class="seoLogo"><img src="img/seologo3.png" /></div>
 							<div class="seoLogoTitle">Внутренняя оптимизация</div>
-						</div><div class="seoSliderLogo">
+						</div><div class="seoSliderLogo" id="seo4">
 							<div class="seoLogo"><img src="img/seologo4.png" /></div>
 							<div class="seoLogoTitle">Внешняя оптимизация</div>
-						</div><div class="seoSliderLogo">
+						</div><div class="seoSliderLogo" id="seo5">
 							<div class="seoLogo"><img src="img/seologo5.png" /></div>
 							<div class="seoLogoTitle">Ежемесячные отчеты</div>
-						</div><div class="seoSliderLogo">
+						</div><div class="seoSliderLogo" id="seo6">
 							<div class="seoLogo"><img src="img/seologo6.png" /></div>
 							<div class="seoLogoTitle">Аналитика результатов</div>
 						</div>
 					</div>
 					<div class="contextual-advertising">
-						<div class="contextualSliderLogo">
-							<div class="contextlogo"><img src="img/contextlogo1.png" /></div>
-							<div class="contextlogoTitle">Исследование конкурентов</div>
-						</div><div class="contextualSliderLogo">
-							<div class="contextlogo"><img src="img/contextlogo2.png" /></div>
-							<div class="contextlogoTitle">Сбор ключевых фраз</div>
-						</div><div class="contextualSliderLogo">
-							<div class="contextlogo"><img src="img/contextlogo3.png" /></div>
-							<div class="contextlogoTitle">Оптимизация сайта</div>
-						</div><div class="contextualSliderLogo">
-							<div class="contextlogo"><img src="img/contextlogo4.png" /></div>
-							<div class="contextlogoTitle">Настройка и запуск рекламной компании</div>
+						<div class="contextualSliderLogo" id="context0">
+							<div class="contextLogo"><img src="img/contextlogo1.png" /></div>
+							<div class="contextLogoTitle">Исследование конкурентов</div>
+						</div><div class="contextualSliderLogo" id="context1">
+							<div class="contextLogo"><img src="img/contextlogo1.png" /></div>
+							<div class="contextLogoTitle">Исследование конкурентов</div>
+						</div><div class="contextualSliderLogo" id="context2">
+							<div class="contextLogo"><img src="img/contextlogo2.png" /></div>
+							<div class="contextLogoTitle">Сбор ключевых фраз</div>
+						</div><div class="contextualSliderLogo" id="context3">
+							<div class="contextLogo"><img src="img/contextlogo3.png" /></div>
+							<div class="contextLogoTitle">Оптимизация сайта</div>
+						</div><div class="contextualSliderLogo" id="context4">
+							<div class="contextLogo"><img src="img/contextlogo4.png" /></div>
+							<div class="contextLogoTitle">Настройка и запуск рекламной компании</div>
 						</div>
 					</div>
 					<div class="c-configuring">
-						<div class="cSliderLogo">
-							<div class="clogo"><img src="img/1clogo1.png"/></div>
-							<div class="clogoTitle">Исследование</div>
-						</div><div class="cSliderLogo">
-							<div class="clogo"><img src="img/1clogo2.png"/></div>	
-							<div class="clogoTitle">Создание проекта</div>
-						</div><div class="cSliderLogo">
-							<div class="clogo"><img src="img/1clogo3.png"/></div>
-							<div class="clogoTitle">Программирование</div>
-						</div><div class="cSliderLogo">
-							<div class="clogo"><img src="img/1clogo4.png"/></div>
-							<div class="clogoTitle">Тестирование</div>
+						<div class="cSliderLogo" id="config0">
+							<div class="cLogo"><img src="img/1clogo1.png"/></div>
+							<div class="cLogoTitle">Исследование</div>
+						</div><div class="cSliderLogo" id="config1">
+							<div class="cLogo"><img src="img/1clogo1.png"/></div>
+							<div class="cLogoTitle">Исследование</div>
+						</div><div class="cSliderLogo" id="config2">
+							<div class="cLogo"><img src="img/1clogo2.png"/></div>	
+							<div class="cLogoTitle">Создание проекта</div>
+						</div><div class="cSliderLogo" id="config3">
+							<div class="cLogo"><img src="img/1clogo3.png"/></div>
+							<div class="cLogoTitle">Программирование</div>
+						</div><div class="cSliderLogo" id="config4">
+							<div class="cLogo"><img src="img/1clogo4.png"/></div>
+							<div class="cLogoTitle">Тестирование</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			
-		</div>
+			</div>	
+		</div>	
 		<div class="decorationStepsFooter">
 			<div class="decorationStepsFooter1">
 			</div><div class="decorationStepsFooter2"></div><div class="decorationStepsFooter3"></div>
 		</div>
+
+
+
+		<div class="akcii">
+			<div class="content">
+				<div class="servicesHeaderContent">
+					<div class="servicesHeaderTitle">заказы</div>
+				</div>
+				<div class=""></div>
+
+			</div>
+		</div>
+
 		<footer>
 			
 		</footer>
