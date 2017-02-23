@@ -237,9 +237,7 @@ a{
 	}
 	.headerDownButton img:hover{
 		opacity: 1;
-	}
-	
-
+	}	
 .headerMenu{
 	width: 100%;
 	height: 140px;
@@ -426,7 +424,7 @@ a{
 		background-color:rgba(93, 200, 152,1);
 	}
 
-#services{
+.services{
 	width: 100%;
 	min-height: 600px;
 	background-color: #333;
@@ -582,56 +580,23 @@ a{
 
 .stepsWork{
 	width:100%;
-	min-height: 330px;
-	padding:40px 0px;
-	margin-top:-5px;
-	background-color: #333;
+	min-height: 400px;
+	
+	/*background-color: #333;*/
 }	
-
-
-
-.decorationStepsHeader,.decorationStepsFooter{
+.backgroundStepsWork{
 	width: 100%;
-	min-height: 45px;
-
-}
-.decorationStepsHeader1,.decorationStepsFooter3{
-	display: inline-block;
-	width: 55%;
-	height: 45px;
-	background-color: green;
-}
-.titleStepsWork{
 	position: absolute;
+	z-index: -100;
+}
+.backgroundStepsWork img{
+	width: 100%;
+	height: 400px;
 }
 
-.decorationStepsHeader2{
-	display: inline-block;
-	width: 21%;
-	background-color: yellow;
-	transform: skew(-30deg);
-	position: absolute;
-	height: 45px;
-	left: 50%;
-}
-.decorationStepsFooter2{
-	display: inline-block;
-	width: 21%;
-	background-color: yellow;
-	transform: skew(-30deg);
-	position: absolute;
-	height: 45px;
-	right: 50%;
-}
-.decorationStepsHeader3,.decorationStepsFooter1 {
-	display: inline-block;
-	width: 45%;
-	height: 45px;
-	background-color: blue;	
-}
 .navStepsWork{
 	width: 100%;
-	
+	padding-top: 80px;
 }
 .navStepsWork ul{
 	display: inline-block;
@@ -643,7 +608,7 @@ a{
         margin:2px;
     }
     .navStepsWork a{
-    	background-color:#333;
+    	/*background-color:#333;*/
     	display:block;
     	text-decoration:none;
     	font-size:13px;
@@ -660,7 +625,7 @@ a{
 
 .slider-stepsWork{
 	width: 100%;
-	padding-top:40px;
+	padding-top:30px;
 }
 
 .slider-stepsWork .navSliderStepsWorkLeft{
@@ -677,12 +642,11 @@ a{
 	margin:50px 5px 50px 735px;
 }
 
-.web-development{
+.slider-stepsWork .web-development{
 	width: 710px;
-	margin:0px 20px 40px 20px;	
+	margin:0px 20px 20px 20px;	
 	position: absolute;
 	z-index: 110;
-
 }
 
 .webSliderLogo{
@@ -690,19 +654,16 @@ a{
 	width: 20%;
 	height: 160px;
 	text-align: center;
-
 	vertical-align: middle;
-
 }
 	.webLogo img{
 		padding:10px;
 		height: 90px;
-		
 	}
 
-.seo-promotion{
+.slider-stepsWork .seo-promotion{
 	width: 710px;
-	margin:0px 20px 40px 20px;	
+	margin:0px 20px 20px 20px;	
 	position: absolute;
 	opacity: 0;
 }
@@ -712,18 +673,16 @@ a{
 	width: 16.6%;
 	height: 160px;
 	text-align: center;
-	
 	vertical-align: middle;
 }
 	.seoLogo img{
 		padding: 10px;
 		height: 90px;
-		
 	}
 
-.contextual-advertising{
+.slider-stepsWork .contextual-advertising{
 	width: 710px;
-	margin:0px 20px 40px 20px;	
+	margin:0px 20px 20px 20px;	
 	position: absolute;
 	opacity: 0;
 }
@@ -733,19 +692,17 @@ a{
 	width: 25%;
 	height: 160px;
 	text-align: center;
-	
 	vertical-align: middle;
 }
 	.contextLogo img{
 		padding: 10px;
 		width: 150px;
 		height: 100px;
-		
 	}
 
-.c-configuring{
+.slider-stepsWork .c-configuring{
 	width: 710px;
-	margin:0px 20px 40px 20px;	
+	margin:0px 20px 20px 20px;	
 	position: absolute;
 	opacity: 0;
 }
@@ -755,16 +712,361 @@ a{
 	width: 25%;
 	height: 160px;
 	text-align: center;
-	
 	vertical-align: middle;
 }
 	.cLogo img{
 		padding: 10px;	
-		height: 100px;
-		
+		height: 100px;	
 	}
+
 #web0,#seo0,#context0,#config0{
 	opacity: 0;
 	width: 0px;
 	height: 0px;
 }	
+
+.shares{
+	width: 100%;
+	min-height: 770px;
+}
+
+.sharesHeaderContent{
+	width: 100%;	
+	border:2px solid black;
+	height: auto;
+	margin: 30px auto;
+}
+.sharesHeaderTitle{
+	margin: 0 auto;
+	padding: 10px 0px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:27px;
+	text-align: center;
+}
+
+.sharesBlockContentLeft, .sharesBlockContentCenter, .sharesBlockContentRight{
+	display: inline-block;
+	width: 250px;
+	height: 630px;
+	position: absolute;
+}
+
+.sharesBlockContentLeft{
+	padding-right:16px; 
+	
+}
+.sharesBlockContentCenter{
+	padding: 0px 8px; 
+	margin-left: 250px;
+}
+.sharesBlockContentRight{
+	padding-left:16px; 
+	margin-left: 500px;	
+}
+
+.sharesBlockContentTitle{
+	width: 100%;
+	border:2px solid black;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	text-align: center;
+	padding: 10px;
+}
+
+.sharesBlockContentImage img{
+	width: 100%;
+}
+
+.sharesBlockContentList{
+	margin-top: -4px;
+	border:1px solid white;
+	background-color: #333;
+}
+
+.sharesBlockContentListImage{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 7px;
+	background-color: green;
+	margin:12px 5px;
+}
+
+.sharesBlockContentListImage img{
+	width: 100%;
+	padding: 3px;
+
+}
+
+.sharesBlockContentListContent{
+	display: inline-block;
+	font-weight: 300;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	vertical-align: middle;
+	padding:5px 10px 10px 0px;
+	color: white;
+}
+
+.sharesBlockContentFooter{
+	width: 100%;
+	background-color: #333;
+}
+.sharesBlockContentFooterContent{
+	font-weight: 300;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	padding:20px 20px 10px 25px;
+	color: white;
+}
+.sharesLagest{
+	font-weight: 700;
+	font-size:25px;
+}
+.sharesLage{
+	font-weight: 900;
+	font-size:25px;
+}
+
+.sharesBlockContentFooterButton{
+	padding: 0px 25px 20px 20px;
+	margin: 0 auto;
+}
+ 	.sharesBlockContentFooterButton a{
+    	background-color:green;
+    	display:block;
+    	text-decoration:none;
+    	text-transform: uppercase;
+    	font-size:15px;
+    	color:white;
+    	font-weight:500;
+        font-family:Arial, Helvetica, sans-serif;
+ 		padding: 5px 10px;
+    	text-align: center;
+	}
+    .sharesBlockContentFooterButton a:hover {
+    	background-color:orange;
+    	color: black;
+	}
+
+.sharesBlockContentRightTop{
+	margin-bottom: 16px;
+}
+
+.sharesBlockContentRightTop, .sharesBlockContentRightBottom{
+	width: 100%;
+	height: 301.5px;
+	position: relative;
+}
+
+.sharesImageTop, .sharesImageBottom{
+	width: 100%;
+	height: 301.5px;	
+}
+.sharesImageTop img{
+	width: 100%;
+	padding-top: 78px;
+}
+.sharesImageBottom img{
+	width: 100%;
+	padding-top: 50px;
+}
+
+.sharesBlockRightTop{
+	background-color: rgba(30,200,30,.7);
+}
+
+.sharesBlockRightBottom{
+	background-color: rgba(200,20,30,.7);
+}
+
+.sharesBlockRightTop, .sharesBlockRightBottom{
+	width: 100%;
+	height: 301.5px;	
+	position: relative;
+	margin-top: -301.5px;
+}
+
+.sharesBlockRightTitle{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:22px;
+}
+
+.sharesBlockRightTop .sharesBlockRightTitle{
+	padding:20px 20px 30px 20px;
+}
+
+.sharesBlockRightBottom .sharesBlockRightTitle{
+	padding:20px 20px 10px 20px;
+}
+
+.sharesBlockRightContent{
+	padding: 0px 10px 20px 20px;
+	font-weight: 500;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color: white;
+}
+	.sharesBlockRightContent p {
+		margin-bottom:10px;
+	}
+
+.sharesBlockRightTop .sharesBlockRightContent {
+	margin-bottom:30px;
+}
+
+.sharesBlockRightBottom .sharesBlockRightContent {
+	margin-bottom:75px;
+}
+
+.sharesBlockRightFooter{
+	width: 100%;
+	text-align: center;
+}	
+
+.sharesBlockRightFooterTopImage{
+	width: 100%;
+}
+.sharesBlockRightFooterTopImage img{
+	width: 190px;
+}
+
+.sharesBlockRightFooterBottomTitle{
+	font-weight: 700;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:28px;
+	text-transform: uppercase;
+}
+
+.sharesBlockRightFooterButton{
+	padding: 5px 20px 10px 20px;
+	margin: 0 auto;
+}
+ 	.sharesBlockRightFooterButton a{
+    	background-color:red;
+    	display:block;
+    	text-decoration:none;
+    	text-transform: uppercase;
+    	font-size:15px;
+    	color:white;
+    	font-weight:500;
+        font-family:Arial, Helvetica, sans-serif;
+ 		padding: 5px 10px;
+    	text-align: center;
+	}
+    .sharesBlockRightFooterButton a:hover {
+    	background-color:white;
+    	color: black;
+	}
+
+.decorationPortfolioHeader{
+	width: 100%;
+	min-height: 250px;
+}
+.backgroundPortfolioHeader{
+	width: 100%;
+
+}
+.backgroundPortfolioHeader img{
+	width: 100%;
+	height: 250px;
+}
+.backgroundPortfolioLogo{
+	position: absolute;
+	width: 100%;
+	margin-top: -170px;
+}
+.backgroundPortfolioLogo img{
+	width: 150px;
+	margin-left: 42%;
+
+}
+
+.portfolio{
+	width: 100%;
+	min-height:400px;
+	background-color: rgba(12,50,10,1); 
+	margin-top: -5px;
+}
+
+.portfolio .navStepsWork{
+	padding-top:50px;
+
+}
+
+   .portfolio .navStepsWork a{
+    	color:white;
+    	font-weight:500;
+        font-family:Arial, Helvetica, sans-serif;
+ 		padding: 15px 31px;
+    	border:1px solid white;
+	}
+    .portfolio .navStepsWork a:hover {
+    	background-color:orange;
+    	color: black;
+	}
+	.portfolio .web-development {
+		width: 100%;
+		height: auto;
+	}
+
+.portfolioContent{
+	width: 100%;
+	min-height:250px;
+	margin-top: 20px;
+}
+.portfolioBlockContent{
+	display: inline-block;
+	width: 240px;
+	height: 250px;
+	margin:5px;
+	background-color: #333;
+}
+.portfolioBlockContentImage{
+	width: 100%;
+	height: 76%;
+}
+.portfolioBlockContentImage img{
+	width: 100%;
+	padding: 10px;
+}
+.portfolioBlockContentButton{
+	width: 100%;
+	padding: 10px;
+}
+
+.portfolioBlockContentButton a{
+    	display:block;
+    	text-decoration:none;
+    	font-size:15px;
+    	color:white;
+    	font-weight:500;
+        font-family:Arial, Helvetica, sans-serif;
+ 		padding: 10px 30px;
+    	text-align: center;
+    	border:1px solid white;
+	}
+    .portfolioBlockContentButton a:hover {
+    	background-color:orange;
+    	color: black;
+	}
+#firstPortfolio, #secondPortfolio, #thirdPortfolio{
+	width: 240px;
+	height: 250px;
+	margin:5px;
+	background-color: #333;
+}
+.portfolioButtonOpen, .portfolioButtonClose{
+	text-align: center;
+	width: 300px;
+	color: white;
+	margin:  0px auto ;
+	padding: 20px;
+	position: relative;
+}

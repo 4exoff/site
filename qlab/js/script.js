@@ -247,8 +247,7 @@ $('document').ready(function(){
     });
     //!!!!!
 
-
-
+    //модальное окно заказа
     $(".OrderModalWindows").on("click",function(){
     	$(".modal").css({"visibility":"visible"});
     	$(".contentModalWindowTitle").css({"border":"2px solid black","padding":"25px 0px 20px 20px","height":"65px","background-color":"rgba(240,240, 240, 1)"});
@@ -273,7 +272,33 @@ $('document').ready(function(){
     	$(".footerModalWindow").css({"opacity":"0","width":"0px"});
     	$(".modalInputText").val("");
     });
+	//----------!!!!!
 
+	$('.portfolioBlockContent').hide();
+	$('#firstPortfolio').show();
+    $('#secondPortfolio').show();
+    $('#thirdPortfolio').show();
+    $('.portfolioButtonClose').hide();
+    $('.portfolioButtonOpen').show();
+
+	$('.portfolioButtonOpen').on('click', function () {
+		$('.portfolioBlockContent').show();
+		$('.portfolioButtonOpen').hide();
+		$('.portfolioButtonClose').show();
+    });
+
+	$('.portfolioButtonClose').on('click', function () {
+    	$('.portfolioBlockContent').hide();
+    	$('#firstPortfolio').show();
+    	$('#secondPortfolio').show();
+    	$('#thirdPortfolio').show();
+    	$('.portfolioButtonClose').hide();
+    	$('.portfolioButtonOpen').show();
+    });
+
+	$(".portfolioBlockContentButton").on("click",function(){
+    	alert("Здеся будет потом изображение на весь экран)! Но завтра)")
+    });
 });
 
 
